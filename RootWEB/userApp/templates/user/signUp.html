@@ -10,17 +10,18 @@
     </div>
     <hr/>
     <div align="right">
-        <a href="./goHome/">HOME</a>
+        <a href="../goHome">HOME</a>
     </div>
-    <div align="center">
-        <h2>Login Here!</h2>
-        <form action="./signedIn/" method="post">
+    <div>
+        <h2>Join Us!</h2>
+        <form action="../join/" method="post">
             {% csrf_token %}
             ID  : <input type="text" placeholder="ID" name = "id" required><br/>
             <br/>
-            PWD : <input type="password" placeholder="Password" name = "pwd" required><p/>
-            <input type="submit" value="login">
-            &nbsp;<button><a href="./signUp/">SignUp</a></button>
+            PWD : <input type="password" placeholder="Password" name = "pwd" required><br/>
+            <br/>
+            NAME : <input type="text" placeholder="Name" name = "name" required><p/>
+            <input type="submit" value="Done">
         </form>
     </div>
 
