@@ -3,5 +3,6 @@ from userApp import views
 
 urlpatterns = [
     path('', views.login),
+    path('signedIn/', views.signedIn),
 
 ]
