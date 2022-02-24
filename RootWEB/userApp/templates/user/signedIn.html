@@ -10,14 +10,37 @@
     </div>
     <hr/>
     <div align="right">
-        <a href="../goHome">HOME</a>
+        <button><a href="../goHome/">HOME</a></button>
+        <button><a href="./userLogOut/">LOGOUT</a></button>
     </div>
-    {% if userName%}
+    {% if sessionUserName %}
         <div align="center">
-            <h2>HI! {{userName.user_name}}</h2>
+            <h2>HI! {{sessionUserName}}</h2>
         </div>
     {%else%}
         <p> 사용자의 이름이 없습니다.</p>
     {%endif%}
+    <div>
+        <ul>
+            <button><a href="">주문목록</a></button>
+        </ul>
+        <hr/>
+        <ul>
+            <button><a href="">내가쓴 리뷰</a></button>
+        </ul>
+        <hr/>
+        <ul>
+            <button><a href="">문의사항</a></button>
+        </ul>
+        <hr/>
+        <ul>
+            <button><a href="userDetail/">회원정보</a></button>
+        </ul>
+        <hr/>
+        <ul>
+            <button><a href="userRemove/">회원탈퇴</a></button>
+        </ul>
+        <hr/>
+    </div>
 </body>
 </html>

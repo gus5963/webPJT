@@ -10,9 +10,13 @@
     </div>
     <hr/>
     <div align="right">
-        <a href="">Board</a>
-        <a href="cart/">Cart</a>
-        <a href="user/">Login</a>
+        <button><a href="">Board</a></button>
+        <button><a href="cart/">Cart</a></button>
+        {% if user_name %}
+            <button><a href="user/">{{user_name}}</a></button>
+        {%else%}
+            <button><a href="user/">login</a></button>
+        {%endif%}
     </div>
 
 </body>
