@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div align ="center">
+    <h1>Welcome To PHSSHOP</h1>
+</div>
+<hr/>
+<div align="right">
+    <button><a href="../goHome/">HOME</a></button>
+</div>
+<h1>{{board.title}}</h1>
+<p>{{board.writer}}</p>
+<div>
+    <span>{{board.content}}</span>
+</div>
+<p>{{board.regdate}}</p>
+<button>LIST</button>
+{%if user_id == 'admin'%}
+    <button>UPDATE</button>
+    <button>DELETE</button>
+{%endif%}
+</body>
+</html>

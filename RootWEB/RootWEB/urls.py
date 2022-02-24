@@ -22,5 +22,5 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('user/', include('userApp.urls')),
     path('cart/', include('cartApp.urls')),
-
+    path('board/', include('boardApp.urls')),
 ]
